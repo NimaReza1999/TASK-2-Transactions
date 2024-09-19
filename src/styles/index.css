@@ -90,6 +90,22 @@ html {
     margin: 0 auto;
   }
 
+  .btn__show-transactions {
+    width: 80%;
+    margin: 1.5rem auto;
+    font-weight: 700;
+    border: none;
+    background-color: var(--color-primary-100);
+    font-family: "Vazirmatn";
+    padding: 1rem;
+    border-radius: var(--border-radius-sm);
+  }
+
+  .btn__show-transactions:hover {
+    background-color: var(--color-primary-400);
+    transition: 500ms ease-in;
+  }
+
   .filters,
   .shows {
     background-color: var(--color-primary-300);
