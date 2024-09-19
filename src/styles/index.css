@@ -162,7 +162,7 @@ html {
     background-color: var(--color-primary-700);
     margin-top: 5rem;
     width: 96.5%;
-    height: 93%;
+    height: auto;
     border-radius: var(--border-radius-sm);
     display: flex;
     flex-direction: column;
