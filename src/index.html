@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+      <h2 class="navbar__title">
+        داشبورد مدیریتی
+      </h2>
+      <input type="text" class="search__input" placeholder="جست‌وجو بر اساس شماره پیگیری">
+    </nav>
+
+    <aside>
+      <img src="../assets/imgs/Logo.png" alt="logo" class="img__logo">
+      <div class="filters">
+        <h1 class="filters__title">
+          اعمال فیلتر مرتب‌‌‌سازی
+        </h1>
+        <div class="filter__item">
+          <input type="radio" class="all checkbox__input" id="all" name="filter">
+          <label for="all">
+            همه
+          </label>
+        </div>  
+        <div class="filter__item">
+          <input type="radio" class="hight_to_low-input checkbox__input" id="high_to_low" name="filter">
+          <label for="high_to_low">
+            از بیشترین قیمت
+          </label>
+        </div>
+        <div class="filter__item">
+          <input type="radio" class="low_to_high-input checkbox__input" id="low_to_high" name="filter">
+          <label for="low_to_high">
+           از کمترین قیمت
+          </label>
+        </div>
+        <div class="filter__item">
+          <input type="radio" class="newest checkbox__input" id="newest" name="filter">
+          <label for="newest">
+            جدیدترین‌ها
+          </label>
+        </div>
+      </div>
+
+      <div class="shows">
+        <h2 class="shows__title">
+          اعمال فیلتر نوع تراکنش
+        </h2>
+
+        <div class="show__item">
+          <div class="filter__item">
+            <input type="radio" class="all shows__input" id="all-shows" name="shows">
+            <label for="all-shows">
+              همه‌ی تراکنش‌ها
+            </label>
+          </div>
+          <div class="filter__item">
+            <input type="radio" class="deposits shows__input" id="deposits-shows" name="shows">
+            <label for="deposits-shows">
+              واریز به حساب
+            </label>
+          </div>
+          <div class="filter__item">
+            <input type="radio" class="withdraw shows__input" id="withdraw-shows" name="shows">
+            <label for="withdraw-shows">
+              برداشت از حساب
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <main>
+      <h2 class="main__title">
+        لیست تراکنش‌های شما
+      </h2>
+      <ul class="transactions">
+        <li class="transactions__header">
+          <p class="num">
+            ردیف
+          </p>
+          <p class="transaction__type">
+            نوع تراکنش
+          </p>
+          <p class="transaction__price">
+            مبلغ
+          </p>
+          <p class="transaction__number">
+            شماره پیگیری
+          </p>
+          <p class="transaction__date">
+            تاریخ تراکنش
+          </p>
+        </li>
+        <li class="transactions__header transactions__item">
+          <p class="num">
+            ۱
+          </p>
+          <p class="transaction__type">
+           واریز
+          </p>
+          <p class="transaction__price">
+            ۱.۰۰۰.۰۰۰
+          </p>
+          <p class="transaction__number">
+            ۱۲۳۴۵۶
+          </p>
+          <p class="transaction__date">
+           ۱۴۰۳.۰۶.۲۹
+          </p>
+        </li>
+        <li class="transactions__header transactions__item">
+          <p class="num">
+            ۲
+          </p>
+          <p class="transaction__type">
+           برداشت
+          </p>
+          <p class="transaction__price">
+            ۱.۰۰۰.۰۰۰
+          </p>
+          <p class="transaction__number">
+            ۱۲۳۴۵۶
+          </p>
+          <p class="transaction__date">
+           ۱۴۰۳.۰۶.۲۹
+          </p>
+        </li>
+      </ul>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
