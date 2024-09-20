@@ -1,8 +1,7 @@
+// *Variables
+
 let allPaymentData = [];
 const API_URL = "http://localhost:3000/transactions";
-
-const getDataBtn = document.querySelector(".btn__show-transactions");
-const transactionsUL = document.querySelector(".transactions");
 const transactionsListHeader = `
 
         <li class="transactions__header">
@@ -22,6 +21,20 @@ const transactionsListHeader = `
             تاریخ تراکنش
           </p>
         </li>`;
+
+
+
+// *Selectors
+
+
+const getDataBtn = document.querySelector(".btn__show-transactions");
+const transactionsUL = document.querySelector(".transactions");
+const searchInput = document.querySelector(".search__input");
+
+
+
+// *Functions
+
 
 const dateFormatter = (date) => {
 
@@ -75,4 +88,21 @@ function getData() {
 
 }
 
+const searchHandler = () => {
+
+  axios
+  .get(`${API_URL}?refId_like=${searchInput.value}`)
+  .then((res) => searchItemShower(res.data))
+
+}
+
+const searchItemShower = (data) => {
+
+    transactionsUL.innerHTML = transactionsListHeader;
+    liElementCreator(data)
+}
+
+// *EeventListeners
+
 getDataBtn.addEventListener("click", getData);
+searchInput.addEventListener("input", searchHandler);

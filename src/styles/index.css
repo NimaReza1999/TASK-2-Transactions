@@ -154,6 +154,8 @@ html {
     padding: 1rem;
     border-radius: var(--border-radius-sm);
     font-family: 'Vazirmatn';
+    outline: none
+    ;
   }
 
   main {
